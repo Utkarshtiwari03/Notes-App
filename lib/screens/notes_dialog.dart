@@ -8,7 +8,6 @@ class NoteDialog extends StatefulWidget {
   final int colorIndex;
   final List<Color> noteColors;
   final Function onNoteSaved;
-
   const NoteDialog({
     super.key,
     this.noteId,
@@ -138,8 +137,8 @@ class _NoteDialogState extends State<NoteDialog> {
             widget.onNoteSaved(
               newTitle,
               newDescription,
-              _selectedColorIndex,
               currentDate,
+              _selectedColorIndex,
             );
             Navigator.pop(context);
           },

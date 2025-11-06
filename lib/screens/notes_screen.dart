@@ -90,9 +90,6 @@ class _NotesScreenState extends State<NotesScreen> {
       ),
       floatingActionButton: FloatingActionButton(
           onPressed:() async{
-
-            await NotesDatabase.instance.addNote("Hello", "description", "2024-01-01", 0);
-
             showNoteDialog();
           },
         backgroundColor: Colors.white,
